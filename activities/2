@@ -1,0 +1,16 @@
+1. Create a directory called "Backup" in the "Documents" folder
+mkdir -p ~/Documents/Backup
+
+2. Copy all the C program files (.c files) into this folder
+cp ~/Documents/*.c ~/Documents/Backup/
+
+3. Change to the "Documents" folder
+cd ~/Documents
+
+4. Create a .tar.gz file using the tar command
+tar -czf Backup.tar.gz Backup
+
+5. Delete the "Backup" folder
+rm -rf Backup
+
+echo "Backup process completed successfully."
